@@ -1,0 +1,79 @@
+Id,Status,Category,Party,Recurrent,Recurrence Frequency,Date,Next expense date,Amount,Currency
+NE1,nonbillable,Office rent,Red brick,FALSE,,1-6-2015,,13000,PLN
+NE2,nonbillable,Internet,Mayflower,FALSE,,2-6-2015,,1500,PLN
+NE3,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE4,nonbillable,Other,,FALSE,,5-6-2015,,4750,PLN
+NE5,nonbillable,Fuel,,FALSE,,15-6-2015,,1759,PLN
+NE6,nonbillable,New laptop,,FALSE,,23-6-2015,,5460,PLN
+NE7,nonbillable,Software,Financial App,FALSE,,25-6-2015,,3400,PLN
+NE8,nonbillable,Software,Management App,FALSE,,25-6-2015,,5000,PLN
+NE9,nonbillable,Bank Services,Golden State Bank,FALSE,,27-6-2015,,3000,PLN
+NE10,nonbillable,Fuel,,FALSE,,28-6-2015,,1841,PLN
+NE11,nonbillable,Office rent,Red brick,FALSE,,1-7-2015,,13000,PLN
+NE12,nonbillable,Internet,Mayflower,FALSE,,2-7-2015,,1500,PLN
+NE13,nonbillable,Trip to London,,FALSE,,2-7-2015,,12414,PLN
+NE14,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE15,nonbillable,Other,,FALSE,,7-7-2015,,3402,PLN
+NE16,nonbillable,New furniture,BuB Co.,FALSE,,10-7-2015,,7850,PLN
+NE17,nonbillable,Other,,FALSE,,18-7-2015,,1910,PLN
+NE18,nonbillable,Software,Financial App,FALSE,,25-7-2015,,3400,PLN
+NE19,nonbillable,Software,Management App,FALSE,,25-7-2015,,5000,PLN
+NE20,nonbillable,Other,,FALSE,,26-7-2015,,2400,PLN
+NE21,nonbillable,Office rent,Red brick,FALSE,,1-8-2015,,5000,PLN
+NE22,nonbillable,Internet,Mayflower,FALSE,,2-8-2015,,500,PLN
+NE23,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE24,nonbillable,Law consultance,,FALSE,,6-8-2015,,6500,PLN
+NE25,nonbillable,Other,,FALSE,,8-8-2015,,4000,PLN
+NE26,nonbillable,Bank Services,Golden State Bank,FALSE,,9-8-2015,,3600,PLN
+NE27,nonbillable,Other,,FALSE,,15-8-2015,,1782,PLN
+NE28,nonbillable,Trip to Manchester,,FALSE,,20-8-2015,,12976,PLN
+NE29,nonbillable,Software,Financial App,FALSE,,25-8-2015,,3400,PLN
+NE30,nonbillable,Software,Management App,FALSE,,25-8-2015,,5000,PLN
+NE31,nonbillable,Other,,FALSE,,29-8-2015,,579,PLN
+NE32,nonbillable,Office rent,Red brick,FALSE,,1-9-2015,,14000,PLN
+NE33,nonbillable,Internet,Mayflower,FALSE,,2-9-2015,,1600,PLN
+NE34,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE35,nonbillable,Fuel,,FALSE,,5-9-2015,,1242,PLN
+NE36,nonbillable,Other,,FALSE,,5-9-2015,,1981,PLN
+NE37,nonbillable,New MacBook,,FALSE,,10-9-2015,,5000,PLN
+NE38,nonbillable,New MacBook,,FALSE,,10-9-2015,,5000,PLN
+NE39,nonbillable,Bank Services,Golden State Bank,FALSE,,17-9-2015,,3700,PLN
+NE40,nonbillable,Other,,FALSE,,23-9-2015,,689,PLN
+NE41,nonbillable,Software,Financial App,FALSE,,25-9-2015,,3400,PLN
+NE42,nonbillable,Software,Management App,FALSE,,25-9-2015,,5000,PLN
+NE43,nonbillable,Office rent,Red brick,FALSE,,1-10-2015,,14000,PLN
+NE44,nonbillable,Internet,Mayflower,FALSE,,2-10-2015,,1600,PLN
+NE45,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE46,nonbillable,Trip to Leicester,,FALSE,,4-10-2015,,11689,PLN
+NE47,nonbillable,New equipment,Winter Incorp.,FALSE,,6-10-2015,,6400,PLN
+NE48,nonbillable,Fuel,,FALSE,,10-10-2015,,1429,PLN
+NE49,nonbillable,Other,,FALSE,,13-10-2015,,4500,PLN
+NE50,nonbillable,Company Birthday Event,,FALSE,,18-10-2015,,10000,PLN
+NE51,nonbillable,Other,,FALSE,,20-10-2015,,681,PLN
+NE52,nonbillable,Software,Financial App,FALSE,,25-10-2015,,3400,PLN
+NE53,nonbillable,Software,Management App,FALSE,,25-10-2015,,5000,PLN
+NE54,nonbillable,Fuel,,FALSE,,28-10-2015,,1201,PLN
+NE55,nonbillable,Office rent,Red brick,FALSE,,1-11-2015,,14000,PLN
+NE56,nonbillable,Internet,Mayflower,FALSE,,2-11-2015,,1600,PLN
+NE57,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE58,nonbillable,Bank Services,Golden State Bank,FALSE,,7-11-2015,,3200,PLN
+NE59,nonbillable,Law consultance,,FALSE,,10-11-2015,,5000,PLN
+NE60,nonbillable,Trip to London,,FALSE,,10-11-2015,,12000,PLN
+NE61,nonbillable,Other,,FALSE,,12-11-2015,,450,PLN
+NE62,nonbillable,Fuel,,FALSE,,16-11-2015,,990,PLN
+NE63,nonbillable,New office equipment,,FALSE,,20-11-2015,,7500,PLN
+NE64,nonbillable,Software,Financial App,FALSE,,25-11-2015,,3400,PLN
+NE65,nonbillable,Software,Management App,FALSE,,25-11-2015,,5000,PLN
+NE66,nonbillable,Bank Services,Golden State Bank,FALSE,,27-11-2015,,3400,PLN
+NE67,nonbillable,Office rent,Red brick,FALSE,,1-12-2015,,14000,PLN
+NE68,nonbillable,Internet,Mayflower,FALSE,,2-12-2015,,1600,PLN
+NE69,nonbillable,Bank Services. Account,Golden State Bank,FALSE,,4-6-2015,,2500,PLN
+NE70,nonbillable,Other,,FALSE,,5-12-2015,,3400,PLN
+NE71,nonbillable,Other,,FALSE,,8-12-2015,,1200,PLN
+NE72,nonbillable,Vehicle repairing,,FALSE,,15-12-2015,,2700,PLN
+NE73,nonbillable,Other,,FALSE,,18-12-2015,,1400,PLN
+NE74,nonbillable,Trip to Berlin,,FALSE,,22-12-2015,,8200,PLN
+NE75,nonbillable,Cristmas Party,,FALSE,,23-12-2015,,6400,PLN
+NE76,nonbillable,Software,Financial App,FALSE,,25-12-2015,,3400,PLN
+NE77,nonbillable,Software,Management App,FALSE,,25-12-2015,,5000,PLN
+NE78,nonbillable,Other,,FALSE,,28-12-2015,,312,PLN

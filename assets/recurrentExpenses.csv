@@ -1,0 +1,4 @@
+Id,Status,Category,Party,Recurrent,Recurrence Frequency,Date,Next expense date,Amount,Currency
+RE1,active,Office rent,Red brick,TRUE,months,,1-1-2016,14000,PLN
+RE2,active,Internet,Mayflower,TRUE,months,,2-1-2016,1600,PLN
+RE3,active,Bank Services. Account,Golden State Bank,TRUE,months,,4-1-2016,2500,PLN

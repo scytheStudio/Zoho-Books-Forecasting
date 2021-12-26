@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Zoho Forecasting</DisplayName>
+    <Description>Installs Zoho Forecasting on your computer.</Description>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2021-10-27</ReleaseDate>
+    <Licenses>
+        <License name="Beer license" file="license.txt" />
+    </Licenses>
+    <Default>true</Default>
+</Package>

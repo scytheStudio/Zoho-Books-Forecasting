@@ -1,0 +1,13 @@
+Number,Party,Recurrent,Status,Recurrence Frequency,Date,Due date,Next bill date,Amount,Currency
+RB1,Salary Peter Johns,TRUE,active,months,,,15-01-2016,3200,PLN
+RB2,Salary Anna Bussen,TRUE,active,months,,,15-01-2016,1400,EUR
+RB3,Salary Tom Ham,TRUE,active,months,,,15-01-2016,3100,PLN
+RB4,Salary Will Dowell,TRUE,active,months,,,15-01-2016,3200,PLN
+RB5,Salary Sam Jackob,TRUE,active,months,,,15-01-2016,1100,USD
+RB6,Salary Marta Teler,TRUE,active,months,,,15-01-2016,3200,PLN
+RB7,Salary Abdula Viller,TRUE,active,months,,,15-01-2016,4000,PLN
+RB8,Salary Teresa Finalia,TRUE,active,months,,,15-01-2016,1700,GBP
+RB9,Salary Ivan Dulov,TRUE,active,months,,,15-01-2016,2800,PLN
+RB10,Salary Filip Dler,TRUE,active,months,,,15-01-2016,2850,PLN
+RB11,Salary Marcin Wylow,TRUE,active,months,,,15-01-2016,2200,PLN
+RB12,Salary Adam Drendon,TRUE,active,months,,,15-01-2016,2300,PLN

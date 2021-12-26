@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Zoho Forecasting</Name>
+    <Version>1.0.0</Version>
+    <Title>Zoho Forecasting Installer</Title>
+    <Publisher>Scythe Studio</Publisher>
+    <StartMenuDir>Zoho Forecasting</StartMenuDir>
+    <TargetDir>@HomeDir@/ZohoForecasting</TargetDir>
+</Installer>

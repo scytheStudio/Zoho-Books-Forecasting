@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/moon.png</file>
+        <file>assets/sun.png</file>
+        <file>assets/buildWithQt.png</file>
+        <file>assets/builtWithQtWhite.png</file>
+        <file>assets/logo.png</file>
+        <file>assets/scythestudio-logo.png</file>
+        <file>assets/invoices.csv</file>
+        <file>assets/normalBills.csv</file>
+        <file>assets/normalExpenses.csv</file>
+        <file>assets/recurrentBills.csv</file>
+        <file>assets/recurrentExpenses.csv</file>
+    </qresource>
+    <qresource prefix="/\"/>
+</RCC>
