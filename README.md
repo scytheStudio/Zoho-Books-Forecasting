@@ -1,70 +1,36 @@
-# Zoho Forecasting
+![Zoho Books Forecasting](./pictures/banner.png)
+# Zoho Books Forecasting
 
 The application is used for displaying a prognosis of the company budget. The need for this application is due to inability of Zoho Books frontend to generate budget forecasting report.
 
-## Documentation
+---
 
-### Table of contents
+[![Scythe Studio](./pictures/scythestudio-logo.png)](https://scythe-studio.com)
 
-- [Files](#Files)
-- [Installing](#Installing)
-- [Setup](#Setup)
-- [Usage](#Usage)
+[![Built with Qt](./pictures/built-with-qt.png)](https://qt.io)
 
-### Files
+---
 
-- **Doxyfile** - configuration file for Doxygen.
+Zoho Books Forecasting is a cross-platform desktop application for visualising financial cash flow and history. It utilises a [Zoho Books](https://www.zoho.com/books/api/v3/) that is an online, featurerich accounting software. However, it lacks an important functionality to make financial forecasts based on current incomes, expenses, recurring costs and hypothetical items. With Zoho Books Forecasting you can check how your's company cash flow would be influenced by a new cost or a new income.
 
-- **doxygen-awesome.css** - style sheet file describing the default appearance of Scythe Studio documentation.
+Visit this [site](https://scythe-studio.com/en/blog) to learn more about Zoho Books Forecasting features.
 
-- **doxygen-awesome-sidebar-only.css** - style sheet changing navigation to more modern sidebar.
+![Zoho Books Forecasting](./pictures/screenshot.png)
 
-- **Scythe_Studio_logo.png** - Scythe Studio logo added to the documentation.
+Application was built and tested on:
+- Windows 10
+- macOS 10.13
+- Ubuntu 20.10
 
-### Installing
+The project doesn't have any dependencies besides the Qt framework (used Qt version is 5.15), so it should be easily compilable on other platforms.
 
-1. Download Doxygen from [Official Doxygen Site](https://www.doxygen.nl/download.html)
+# About Scythe Studio
+Zoho Books Forecasting application was developed and is maintained by Scythe Studio company.
+We are an official Qt Service Partner and a provider of Qt Software Development services including:
+- Desktop applications development
+- Mobile applications development
+- Embedded systems development
+- Qt and C++ consulting
+- UI/UX designing
 
-2. Add Doxygen to PATH in your system environment variables.
-
-3. Install Doxyqml through pip3 (need to install Python first)
-
-   `pip3 install doxyqml`
-
-4. Add Doxyqml to PATH in your system environment variables.
-
-5. Install graphviz from [Official Graphviz Site](https://www.graphviz.org/download/) (version > 1.8.10)
-
-6. Add graphviz to PATH in your system environment variables.
-
-## Setup
-
-The first thing is to place the files in the root folder of your current project. You can create a folder for this, e.g. _"documentation-config"_
-
-Next you need to modify the **Doxyfile** file. You can do this through build-in Doxygen program called **Doxywizard** (if you are using this method, select expert mode) or use any text-editor (i.e. VSCode).
-
-## Important fields to modified in _Doxyfile_
-
-- _PROJECT_NAME_ -> Set a current project name.
-
-- _PROJECT_NUMBER_ -> Set an actual project version.
-
-- _PROJECT_BRIEF_ -> Add a short description to your project.
-
-- _INPUT_ -> Sets the folders where the code for the documentation is located. So in 99% cases you should add **src** folder and **qml** folder. **IMPORTANT** -> Remember that if the folder you specify contains _build_ folder, doxygen will also scan it, which will generate an incorrect documentation. In that case, add this directory to _EXCLUDE_)
-
-### Optional fields to modified in _Doxyfile_
-
-- _PROJECT_LOGO_ -> If the current project has a logo, you can set it up. By default the Scythe Studio logo will be used.
-
-- _OUTPUT_DIRECTORY_ -> Set the destination folder for the documentation. By default a new folder "documentation-generated" will be created.
-
-Once these variables are set, your configuration file is ready. Now you can proceed with creating the documentation.
-
-## Usage
-
-To generate the documentation you can use **Doxywizard** (open **Doxyfile** and hit run) or command line.
-
-`doxygen Doxyfile`
-
-It may take a while because of generating graphs and diagrams. Documentation should be generated inside the output directory. To view it, find _index.html_ file and open in the browser.
+Do not hesitate visting https://scythe-studio.com to discover our capabilities and learn more about Qt Software Development from [Scythe Studio Blog](https://scythe-studio.com/en/blog).
