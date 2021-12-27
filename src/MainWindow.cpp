@@ -20,9 +20,9 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowIcon(QIcon(":/assets/logo.png"));
 
     if (m_logicController->isDemoMode()) {
-        setWindowTitle("Zoho Forecasting - Demo mode");
+        setWindowTitle("Zoho Books Forecasting - Demo mode");
     } else {
-        setWindowTitle("Zoho Forecasting");
+        setWindowTitle("Zoho Books Forecasting");
     }
 
     setupMenu();
@@ -67,7 +67,7 @@ void MainWindow::onEnableDemoModeActionTriggered()
     m_logicController->setIsDemoMode(true);
     m_helpMenu->removeAction(m_enableDemoModeAction);
     m_helpMenu->addAction(m_disableDemoModeAction);
-    setWindowTitle("Zoho Forecasting - Demo mode");
+    setWindowTitle("Zoho Books Forecasting - Demo mode");
 }
 
 void MainWindow::onDisableDemoModeActionTriggered()
@@ -75,7 +75,7 @@ void MainWindow::onDisableDemoModeActionTriggered()
     m_logicController->setIsDemoMode(false);
     m_helpMenu->removeAction(m_disableDemoModeAction);
     m_helpMenu->addAction(m_enableDemoModeAction);
-    setWindowTitle("Zoho Forecasting");
+    setWindowTitle("Zoho Books Forecasting");
 }
 
 bool MainWindow::isDemoMode() const

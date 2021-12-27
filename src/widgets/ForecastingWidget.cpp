@@ -44,7 +44,7 @@ void ForecastingWidget::onDeleteButtonClicked()
         return;
     }
 
-    int ret = QMessageBox::warning(this, "Zoho forecasting", tr("Are you sure you want to remove selected rows?"),
+    int ret = QMessageBox::warning(this, "Zoho Books Forecasting", tr("Are you sure you want to remove selected rows?"),
                                 QMessageBox::No | QMessageBox::Yes,
                                 QMessageBox::No);
 
@@ -60,7 +60,7 @@ void ForecastingWidget::onDeleteButtonClicked()
 
 void ForecastingWidget::onClearButtonClicked()
 {
-    int ret = QMessageBox::warning(this, "Zoho forecasting", tr("Are you sure you want to clear forecasting table?"),
+    int ret = QMessageBox::warning(this, "Zoho Books Forecasting", tr("Are you sure you want to clear forecasting table?"),
                                 QMessageBox::No | QMessageBox::Yes,
                                 QMessageBox::No);
 
