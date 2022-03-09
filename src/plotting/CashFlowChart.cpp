@@ -7,6 +7,8 @@
 #include <QLineSeries>
 #include <QtCore>
 
+#define MAX_NUMBER_OF_FUTURE_EVENTS 400
+
 CashFlowChart::CashFlowChart(LogicController *logicalController, QGraphicsItem *parent, Qt::WindowFlags wFlags)
     : QChart(parent, wFlags)
     , m_logicController(logicalController)
@@ -58,6 +60,7 @@ void CashFlowChart::setup()
 void CashFlowChart::prepareIncomeSeries(const QList<Invoice> &invoices,
                                         const QList<ForecastingModel::Forecast> &forecasts)
 {
+    qDebug() << "Income series";
     if (m_incomeSeries) {
         delete m_incomeSeries;
     }
@@ -141,10 +144,12 @@ void CashFlowChart::prepareIncomeSeries(const QList<Invoice> &invoices,
     for (DateAmount &dateAmount : m_dateAmounts) {
         if (dateAmount.isIncome) {
             m_incomeSeries->append(dateAmount.date.startOfDay().toMSecsSinceEpoch(), dateAmount.amount);
-            if (dateAmount.amount > m_maxValue) {
-               m_maxValue = dateAmount.amount;
-            } else if (dateAmount.amount < m_minValue) {
-               m_minValue = dateAmount.amount;
+            if (m_fromDate <= dateAmount.date && dateAmount.date <= m_toDate) {
+                if (dateAmount.amount > m_maxValue) {
+                   m_maxValue = dateAmount.amount;
+                } else if (dateAmount.amount < m_minValue) {
+                   m_minValue = dateAmount.amount;
+                }
             }
 
             if (dateAmount.date > dateAfterLast) {
@@ -163,12 +168,14 @@ void CashFlowChart::prepareIncomeSeries(const QList<Invoice> &invoices,
 
     m_incomesDrawn = true;
     emit incomesSeriesDrawn();
+    qDebug() << "end income series";
 }
 
 void CashFlowChart::prepareExpensesSeries(const QList<Expense> &expenses,
                                           const QList<Bill> &bills,
                                           const QList<ForecastingModel::Forecast> &forecasts)
 {
+    qDebug() << "Expenses series";
     if (m_expensesSeries) {
         delete m_expensesSeries;
     }
@@ -195,7 +202,7 @@ void CashFlowChart::prepareExpensesSeries(const QList<Expense> &expenses,
                     dateAmount.date = dateAmount.date.addMonths(i);
                 }
 
-                if (dateAmount.date > limit) {
+                if (dateAmount.date >= limit || i >= MAX_NUMBER_OF_FUTURE_EVENTS) {
                     break;
                 }
                 expensesDateAmounts.append(dateAmount);
@@ -306,10 +313,12 @@ void CashFlowChart::prepareExpensesSeries(const QList<Expense> &expenses,
         if (!dateAmount.isIncome) {
             m_expensesSeries->append(dateAmount.date.startOfDay().toMSecsSinceEpoch(), dateAmount.amount);
             // calculating bounds of Y axe.
-            if (dateAmount.amount > m_maxValue) {
-               m_maxValue = dateAmount.amount;
-            } else if (dateAmount.amount < m_minValue) {
-               m_minValue = dateAmount.amount;
+            if (m_fromDate <= dateAmount.date && dateAmount.date <= m_toDate) {
+                if (dateAmount.amount > m_maxValue) {
+                   m_maxValue = dateAmount.amount;
+                } else if (dateAmount.amount < m_minValue) {
+                   m_minValue = dateAmount.amount;
+                }
             }
 
             if (dateAmount.date > dateAfterLast) {
@@ -328,6 +337,7 @@ void CashFlowChart::prepareExpensesSeries(const QList<Expense> &expenses,
 
     m_expensesDrawn = true;
     emit expensesSeriesDrawn();
+    qDebug() << "end Expenses series";
 }
 
 void CashFlowChart::seriesDrawn()
@@ -341,6 +351,7 @@ void CashFlowChart::seriesDrawn()
 
 void CashFlowChart::prepareCashFlowSeries()
 {
+    qDebug() << "Cashflow series";
     setupPeriods();
     if (m_cashFlowSeries) {
         delete m_cashFlowSeries;
@@ -375,20 +386,24 @@ void CashFlowChart::prepareCashFlowSeries()
 
     for (auto it = m_periods.begin(); it != m_periods.end(); ++it) {
         // calculating bounds of Y axe.
-        if (it->balance > m_maxValue) {
-            m_maxValue = it->balance;
-        } else if (it->balance < m_minValue) {
-            m_minValue = it->balance;
+        if (m_fromDate <= it->startDate && it->endDate <= m_toDate) {
+            if (it->balance > m_maxValue) {
+                m_maxValue = it->balance;
+            } else if (it->balance < m_minValue) {
+                m_minValue = it->balance;
+            }
         }
     }
 
     for (auto itr = m_periods.begin(); itr != m_periods.end(); ++itr) {
         m_cashFlowSeries->append(itr->startDate.startOfDay().addDays(14).toMSecsSinceEpoch(), itr->cashFlow);
         // calculating bounds of Y axe.
-        if (itr->cashFlow > m_maxValue) {
-            m_maxValue = itr->cashFlow;
-        } else if (itr->cashFlow < m_minValue) {
-            m_minValue = itr->cashFlow;
+        if (m_fromDate <= itr->startDate && itr->endDate <= m_toDate) {
+            if (itr->cashFlow > m_maxValue) {
+                m_maxValue = itr->cashFlow;
+            } else if (itr->cashFlow < m_minValue) {
+                m_minValue = itr->cashFlow;
+            }
         }
     }
 

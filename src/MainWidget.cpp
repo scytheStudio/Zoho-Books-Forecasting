@@ -386,7 +386,7 @@ void MainWidget::onModeChanged()
         ui->toDateEdit->setDate(QDate(2016, 03, 31));
         m_logicController->prepareFakeRates();
     } else {
-        ui->fromDateEdit->setDate(QDate::currentDate().addYears(-1));
+        ui->fromDateEdit->setDate(QDate::currentDate().addMonths(-1));
         ui->toDateEdit->setDate(QDate(QDate::currentDate().year(), 12, 31));
         m_logicController->clearExchangeRates();
         m_logicController->checkAccessToken();
