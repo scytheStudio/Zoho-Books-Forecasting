@@ -5,7 +5,7 @@ The application is used for displaying a prognosis of the company budget. The ne
 
 ---
 
-[![Scythe Studio](./pictures/Main-SS-cropped.jpg)](https://scythe-studio.com)
+[![Scythe Studio](./pictures/ss-logo.jpg)](https://scythe-studio.com)
 
 [![Built with Qt](./pictures/built-with-qt.png)](https://qt.io)
 
