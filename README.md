@@ -1,11 +1,11 @@
-![Zoho Books Forecasting](./pictures/banner.png)
+![Zoho Books Forecasting](./pictures/Zoho-Books-Forecasting.jpg)
 # Zoho Books Forecasting
 
 The application is used for displaying a prognosis of the company budget. The need for this application is due to inability of Zoho Books frontend to generate budget forecasting report.
 
 ---
 
-[![Scythe Studio](./pictures/scythestudio-logo.png)](https://scythe-studio.com)
+[![Scythe Studio](./pictures/ss-logo.jpg)](https://scythe-studio.com)
 
 [![Built with Qt](./pictures/built-with-qt.png)](https://qt.io)
 
